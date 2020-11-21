@@ -2,13 +2,25 @@
 
 class Controller
 {
-    //Load the view (checks for the file)
-    public function view($view, $data = [])
+    protected $view;
+
+    public function go($controller, $action)
     {
-        if (file_exists('../app/views/' . $view . '.php')) {
-            require_once '../app/views/' . $view . '.php';
-        } else {
-            die("View does not exists.");
-        }
+        $goingTo = "Location: index.php?c=" . $controller . "&a=" . $action;
+
+        header($goingTo);
+    }
+
+    public function setView($viewFile, $viewData = [])
+    {
+        $this->view = new View($viewFile, $viewData);
+        return $this->view;
+    }
+
+    public function setModel($model)
+    {
+        $model = ucfirst($model);
+        require_once  './app/models/' . $model . '.php';
+        return new $model;
     }
 }
