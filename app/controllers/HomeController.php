@@ -4,7 +4,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        echo "Hello From Home Page";
+        $this->setView('home');
+        $this->view->render();
     }
 
     public function help()
