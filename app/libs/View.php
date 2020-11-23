@@ -14,7 +14,8 @@ class View
 
     public function render()
     {
-        $viewFile = '.app/views/' . $this->viewFile . '.php';
+        $viewFile = './app/views/' . $this->viewFile . '.php';
+
         if (file_exists($viewFile)) {
             include $viewFile;
         }
