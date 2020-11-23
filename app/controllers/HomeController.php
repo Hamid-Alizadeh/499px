@@ -10,6 +10,7 @@ class HomeController extends Controller
 
     public function help()
     {
-        echo "This Is Help Page";
+        $this->setView('help');
+        $this->view->render();
     }
 }
