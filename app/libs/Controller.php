@@ -4,9 +4,10 @@ class Controller
 {
     protected $view;
 
-    public function go($controller, $action)
+    public function go($controller, $action, $params = '')
     {
-        $goingTo = "Location: index.php?c=" . $controller . "&a=" . $action;
+        $p = ($params) ? '&p=' . $params : '';
+        $goingTo = "Location: index.php?c=" . $controller . "&a=" . $action . $p;
 
         header($goingTo);
     }
