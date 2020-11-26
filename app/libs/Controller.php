@@ -11,6 +11,11 @@ class Controller
         header($goingTo);
     }
 
+    public function goBack()
+    {
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
+
     public function setView($viewFile, $viewData = [])
     {
         $this->view = new View($viewFile, $viewData);
