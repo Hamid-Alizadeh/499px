@@ -43,8 +43,8 @@
             </form>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="nav-link" href="user/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a class="nav-link" href="user/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a class="nav-link" href="index.php?c=user&a=register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a class="nav-link" href="index.php?c=user&a=login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </nav>
