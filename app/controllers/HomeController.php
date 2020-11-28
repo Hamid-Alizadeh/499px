@@ -13,4 +13,10 @@ class HomeController extends Controller
         $this->setView('help');
         $this->view->render();
     }
+
+    public function login()
+    {
+        $this->setView('login');
+        $this->view->render();
+    }
 }
