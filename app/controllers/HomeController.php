@@ -19,4 +19,10 @@ class HomeController extends Controller
         $this->setView('login');
         $this->view->render();
     }
+
+    public function register()
+    {
+        $this->setView('register');
+        $this->view->render();
+    }
 }
