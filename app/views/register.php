@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row">
-        <form class="form-signin col-md-4 offset-md-4 text-center mt-5">
+        <form action="index.php?c=user&a=register" class="form-signin col-md-4 offset-md-4 text-center mt-5">
             <img class="mb-4" src="/public/images/logo-icon.png" alt="" width="72">
             <!-- <label for="inputEmail" class="sr-only">Email address</label> -->
             <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
