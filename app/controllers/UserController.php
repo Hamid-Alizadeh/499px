@@ -8,4 +8,8 @@ class UserController extends Controller
         print_r($_POST);
         echo "</pre>";
     }
+
+    public function register()
+    {
+    }
 }
