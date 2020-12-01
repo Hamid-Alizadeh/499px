@@ -6,10 +6,10 @@
         <form action="index.php?c=user&a=register" class="form-signin col-md-4 offset-md-4 text-center mt-5">
             <img class="mb-4" src="/public/images/logo-icon.png" alt="" width="72">
             <!-- <label for="inputEmail" class="sr-only">Email address</label> -->
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
             <!-- <label for="inputPassword" class="sr-only mt-1">Password</label> -->
-            <input type="password" id="inputPassword" class="form-control mt-1" placeholder="Password" required="">
-            <input type="password" id="inputPassword" class="form-control mt-1" placeholder="Repeat Password" required="">
+            <input name="password" type="password" id="inputPassword" class="form-control mt-1" placeholder="Password" required="">
+            <input name="repeat_password" type="password" id="inputPassword" class="form-control mt-1" placeholder="Repeat Password" required="">
 
             <button class="btn btn-lg btn-dark btn-block" type="submit">Sign Up</button>
             <p class="mt-5 mb-3 text-muted">© 2020</p>
