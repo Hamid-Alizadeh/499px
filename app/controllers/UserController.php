@@ -38,4 +38,13 @@ class UserController extends Controller
     {
         echo "Welcome to your profile";
     }
+
+    public function logout()
+    {
+        unset($_SESSION["userId"]);
+        unset($_SESSION["userIsAdmin"]);
+        unset($_SESSION["userName"]);
+        unset($_SESSION["userEmail"]);
+        $this->go("home", "login");
+    }
 }
