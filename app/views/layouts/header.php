@@ -43,8 +43,12 @@
             </form>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="nav-link" href="index.php?c=home&a=register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a class="nav-link" href="index.php?c=home&a=login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <?php if (!isset($_SESSION['userId']) || !$_SESSION['userId']) : ?>
+                    <li><a class="nav-link" href="index.php?c=home&a=register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a class="nav-link" href="index.php?c=home&a=login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <?php else : ?>
+                    <li><a class="nav-link" href="index.php?c=user&a=logout"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
