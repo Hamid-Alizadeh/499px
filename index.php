@@ -1,6 +1,6 @@
 <?php
 
-define('SITENAME', '499PX');
+define('SITENAME', '499 PX');
 
 require_once './app/require.php';
 
