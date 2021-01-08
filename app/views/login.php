@@ -9,7 +9,7 @@
             <input name="password" type="password" id="inputPassword" class="form-control mt-1" placeholder="Password" required="">
             <div class="checkbox mb-2 text-left">
                 <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <input type="checkbox" value="remember-me"> Remember
                 </label>
             </div>
             <button class="btn btn-lg btn-dark btn-block" type="submit">Sign in</button>
