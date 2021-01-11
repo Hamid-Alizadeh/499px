@@ -4,7 +4,7 @@ class DB
 {
     private $dbHost = 'localhost';
     private $dbUser = 'root';
-    private $dbPass = '12345678';
+    private $dbPass = '';
     private $dbName = '499px';
 
     private $statement;
