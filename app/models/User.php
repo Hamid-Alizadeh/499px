@@ -19,4 +19,15 @@ class User
 
         return $this->db->single();
     }
+    
+    public function getById($id)
+    {
+        $sql = "SELECT * FROM users WHERE id = :id";
+
+        $this->db->query($sql);
+
+        $this->db->bind(":id", $id);
+
+        return $this->db->single();
+    }
 }
