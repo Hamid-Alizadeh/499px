@@ -3,6 +3,7 @@
 
 <div class="container">
     <div class="row">
+        <h1>Login</h1>
         <form action="index.php?c=user&a=login" method="post" class="form-signin col-md-4 offset-md-4 text-center mt-5">
             <img class="mb-4" src="/public/images/logo-icon.png" alt="" width="72">
             <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
