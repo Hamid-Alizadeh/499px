@@ -29,9 +29,7 @@ class UserController extends Controller
 
     public function register()
     {
-        echo "<pre>";
         print_r($_POST);
-        echo "</pre>";
     }
 
     public function profile()
