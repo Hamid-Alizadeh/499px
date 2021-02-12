@@ -29,4 +29,3 @@ class Controller
         require_once  './app/models/' . $model . '.php';
         return new $model;
     }
-}
